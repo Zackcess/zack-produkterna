@@ -1,0 +1,58 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.menu{
+    flex-grow:1;
+    height:200px; 
+    margin-left: 7%;  
+}
+
+.h1{
+    position: absolute;
+    
+}
+
+.produkter{
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 150px;
+}
+.product{
+width: 60%;
+height: auto;
+margin: 0%  ;
+}
+.contacts{
+    width: 100%;
+    height: auto;
+}
+.about{
+    width: 100%;
+    height: auto;
+}
+.cart{
+    width: 60%;
+    height: auto;
+}
+
+    
+
+
+
