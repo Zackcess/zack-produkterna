@@ -11,17 +11,34 @@
     display: flex;
     align-items:center;
     justify-content: space-around;
+    overflow: hidden;
+    background: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
-
 .menu{
     flex-grow:1;
-    height:200px; 
-    margin-left: 7%;  
+    float: left;
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+    top: 0;
+
 }
 
-.h1{
-    position: absolute;
+.h{
+    display:flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 10%;
     
+}
+.h1{
+    flex-grow:1;
+    font-size: 44px;
 }
 
 .produkter{
@@ -29,26 +46,35 @@
     position: absolute;
     justify-content: space-around;
     align-items: center;
-    padding: 10px 0%;
+    padding: 20px 0%;
     max-width: 100%;
     height: auto;
     margin-top: 150px;
 }
+.img_wrap:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+
+
 .product{
-width: 60%;
-height: auto;
-margin: 0%  ;
+    width: 100%;
+    height: auto;
+    margin: 0%;
 }
 .contacts{
     width: 100%;
     height: auto;
 }
 .about{
-    width: 100%;
+    width: 50%;
     height: auto;
+    margin-left: 20%;
+    display: block;
 }
+
 .cart{
-    width: 60%;
+    width: 50%;
     height: auto;
 }
 
