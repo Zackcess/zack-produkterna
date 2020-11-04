@@ -5,6 +5,7 @@
     border: 0px;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 .navbar{
@@ -12,7 +13,7 @@
     align-items:center;
     justify-content: space-around;
     overflow: hidden;
-    background: #333;
+    background: rgb(94, 93, 93);
     position: fixed;
     top: 0;
     width: 100%;
@@ -28,7 +29,6 @@
     top: 0;
 
 }
-
 .h{
     display:flex;
     justify-content: center;
@@ -46,31 +46,53 @@
     position: absolute;
     justify-content: space-around;
     align-items: center;
-    padding: 20px 0%;
+    padding: 20px;
     max-width: 100%;
     height: auto;
     margin-top: 150px;
+    margin-left: 2%;
+    
 }
+
+
 .img_wrap:hover .overlay {
-    bottom: 0;
-    height: 100%;
-  }
+    opacity: 1;
+}
 
 
 .product{
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    margin: 0%;
+    display: block;
 }
+
+.overlay{
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  width: 10%;
+  border-radius: 10px;
+  margin-left:2%;
+}
+
 .contacts{
     width: 100%;
     height: auto;
 }
+
 .about{
-    width: 50%;
+    width: 70%;
     height: auto;
-    margin-left: 20%;
-    display: block;
+
 }
 
 .cart{
