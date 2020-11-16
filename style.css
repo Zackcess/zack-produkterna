@@ -93,7 +93,7 @@
     float: left;
 }
 
-@keyframes slider{/* rätt basic grejer här med keyframes*/
+@keyframes slider{/* rätt basic grejer här med keyframes, svårt o komma på ett snyggt sätt bara*/
     0% {
         left:0 
     }
