@@ -1,15 +1,15 @@
 
 *{
-    margin: 0px;
+    margin: 0px; /* Ändrar standard värdena så inget plötsligt kan hända sedan*/
     padding: 0px;
     border: 0px;
     font-family: 'Poppins';
-    overflow-x: hidden;
+    overflow-x: hidden; /*Gömmer x-axeln*/
     box-sizing: border-box;
 }
 
 .navbar{
-    display: flex;
+    display: flex;/*Flexboxar menyn*/
     align-items:center;
     justify-content: space-around;
     overflow: hidden;
@@ -17,13 +17,11 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 5;
+    z-index: 5;/*Så att allt ska hamna i rätt ordning*/
 }
-.navwrap{
-    justify-content: space-around;
-}
+
 .menu{
-    flex-grow:1;
+    flex-grow:2%; 
     float: left;
     display: block;
     color: #d0d0c2;
@@ -36,17 +34,16 @@
 }
 
 .menu:hover{
-    background-color: white;
-    border-radius: 12px;
+    background-color: white;/*Så att man kan hovra*/
+    border-radius: 12px;/*rundar av kanter*/
 }
 
 .middleh1{
-    display: flex;
-    position: absolute;
-    justify-content: center;
+    display: flex;/*flexboxar igen*/
+    justify-content: center;    
 }
-.hero-heading {
-    font-size: 40px;
+.hero-heading { /*För h1 taggen*/
+    font-size: 30px;
     font-weight: bold;
     position: absolute;
     width: auto;
@@ -55,38 +52,32 @@
     margin-top: 25%;
     z-index: 2;
     text-decoration: none;
-    overflow: hidden;
+
 }
 .hero-heading-center{
-    flex-grow: 1;
+    flex-grow: 2%;
 }
 .hero-heading + .hero-heading{
-    margin-left: 2%;
+    margin-left: 2%; /*responsiv*/
 }
 
-.middleh2{
-    display: flex;
-    position: absolute;
+.middleh2{/*Den andra rubriken*/
+    display: flex; 
     justify-content: center;
 }
-.heading2{
+.heading2{/*flexar också för att få denna i mitten*/
+    position: absolute;
     font-size: 40px;
     font-weight: bold;
-    width: 200px;
-    height: 150px;
     color:#d0d0c2;
-    margin-top: 130%;
-    z-index: 4;
+    margin-top: 20%;
+    z-index: 9;
     text-decoration: none;
     overflow: hidden;
 }
 .headingh2-center{
-    flex-grow: 2;
+    flex-grow: 2%;
 }
-
-
-
-
 .slider{
     overflow: hidden;
 }
@@ -95,28 +86,28 @@
     width: 500%;
     margin: 0;
     left: 0;
-    animation: 20s slider infinite;
+    animation: 20s slider infinite;/*scroll effekten för animation*/
 }
 .imgslider{
     width:20%;
     float: left;
 }
 
-@keyframes slider{
+@keyframes slider{/* rätt basic grejer här med keyframes*/
     0% {
-        left:0
+        left:0 
     }
     20% {
-        left:0
+        left:0 /*för att få slide effekten från första till andra
     }
     25% {
-        left: -100%;
+        left: -100%;/*efter 5 sekunder vilket är 25% av 20 byter den genom att flytta*/
     }
     45% {
-        left: -100%
+        left: -100% /*för att sedan få den där känslan att den byter lite i taget kör jag 45%*/
     }
     50% {
-        left: -200%;
+        left: -200%; /*sedan ny bild*/
     }
     70% {
         left:-200%
@@ -136,21 +127,22 @@
 
 .produkter{
     display: flex;
-    position: absolute;
+    position: relative;
     justify-content: space-evenly;
     align-items: center;
     padding: 20px;
     max-width: 100%;
     height: auto;
-    margin-top: 60%;
-    margin-bottom: 10%;
     
 }
+.img_wrap{
+    padding-bottom: 10px;
+}
 
-
-.img_wrap:hover .overlay {
+.img_wrap:hover .overlay { /*gör så att jag får den där hover effekten med text*/
     opacity: 1;
     margin-left: 2%;
+    margin-bottom: 3%;
 }
 
 
@@ -160,7 +152,7 @@
     display: block;
 }
 
-.overlay{
+.overlay{/*specifierar hur den ska se ut*/
   position: absolute; 
   bottom: 0; 
   background: rgb(0, 0, 0);
@@ -177,7 +169,7 @@
   border-radius: 10px;
 }
 
-.contacts{
+.contacts{/*bilderna var olika stora vilket medförde att jag fick ändra lite, drf det inte heller ser helt nice ut, good enough*/
     width: 100%;
     height: auto;
 }
@@ -193,7 +185,17 @@
     height: auto;   
 }
 
-    
-
-
-
+.footer{/*Gör så att jag kan få footern i mitten*/
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.footer-text{
+    flex-grow: 2%;
+    background: #d0d0c2;
+    height:60px;
+    bottom:0px;
+    padding-top:20px;
+    width: 100%;
+    left:0px;
+}
